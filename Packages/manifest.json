@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.inworld.unity": "https://github.com/inworld-ai/inworld-unity.git#yj3.2",
     "com.nianticlabs.lightship": "https://github.com/niantic-lightship/ardk-upm.git",
     "com.nianticlabs.lightship.sharedar": "https://github.com/niantic-lightship/sharedar-upm.git",
     "com.unity.collab-proxy": "2.3.1",
