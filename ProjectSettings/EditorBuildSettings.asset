@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
-    path: Assets/Samples/Scanning/Scenes/Recording.unity
+    path: Assets/LightshipSamples/Scanning/Scenes/Recording.unity
     guid: a8b815c6414994643b8e7a33e5b2ccf2
   m_configObjects:
     Niantic.Lightship.AR.LightshipSettings: {fileID: 11400000, guid: 6c6dbb081d09aca4d8f83744fec57327, type: 2}
