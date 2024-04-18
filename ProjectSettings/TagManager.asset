@@ -9,8 +9,8 @@ TagManager:
   - Climb
   - Fly
   - Water
-  - Cube
   - Animal
+  - Item
   layers:
   - Default
   - TransparentFX

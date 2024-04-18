@@ -6,13 +6,13 @@ using Random = UnityEngine.Random;
 
 public class SpawnOnARMesh : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> spawnObjects = new List<GameObject>();
+    [SerializeField] private List<CollectibleItem> itemPrefabs = new List<CollectibleItem>();
     [SerializeField] private float minVertsForSpawn;
     [SerializeField] private float scaler;
     
     [Range(0,100)]
     [SerializeField] private int spawnLikelyHood = 33; 
-    private GameObject spawnedObject;
+    private CollectibleItem spawnedObject;
 
     private MeshAnalyser meshAnalyser;
     private Mesh arMesh; 
@@ -45,19 +45,20 @@ public class SpawnOnARMesh : MonoBehaviour
         if (arMesh.vertexCount > minVertsForSpawn &&
             meshAnalyser.IsGround)
         {
-            InstantiateObject(GetRandomObject());
+            InstantiateItem(GetRandomItem());
         }
         
     }
-    GameObject GetRandomObject()
+    CollectibleItem GetRandomItem()
     {
-        return spawnObjects[Random.Range(0, spawnObjects.Count)];
+        return itemPrefabs[Random.Range(0, itemPrefabs.Count)];
     }
 
-    void InstantiateObject(GameObject obj)
+    void InstantiateItem(CollectibleItem obj)
     {
         spawnedObject = Instantiate(obj, GetRandomVector(), Quaternion.identity);
         spawnedObject.transform.localScale *= scaler;
+        GameManager.Instance.AddItem(spawnedObject);
     }
 
     Vector3 GetRandomVector()
