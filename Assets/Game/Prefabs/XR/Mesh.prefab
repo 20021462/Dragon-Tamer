@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1228694180109355689}
   - component: {fileID: 6000225927350988862}
   - component: {fileID: 4844552063296947171}
+  - component: {fileID: 1113810538510158731}
   - component: {fileID: 7431006799454775370}
   - component: {fileID: 311546291206759041}
   m_Layer: 0
@@ -18,7 +19,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1228694180109355689
 Transform:
@@ -85,6 +86,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1113810538510158731
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806985618300123836}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!114 &7431006799454775370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPrefabs:
-  - {fileID: 6411103341207001274, guid: d5413ea75e944694c92d609ad21cb42d, type: 3}
+  - {fileID: 4360674606695539362, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
   minVertsForSpawn: 30
   scaler: 0.5
   spawnLikelyHood: 62

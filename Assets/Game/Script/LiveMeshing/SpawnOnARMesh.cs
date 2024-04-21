@@ -58,7 +58,7 @@ public class SpawnOnARMesh : MonoBehaviour
     {
         spawnedObject = Instantiate(obj, GetRandomVector(), Quaternion.identity);
         spawnedObject.transform.localScale *= scaler;
-        GameManager.Instance.AddItem(spawnedObject);
+        //GameManager.Instance.AddItem(spawnedObject);
     }
 
     Vector3 GetRandomVector()
