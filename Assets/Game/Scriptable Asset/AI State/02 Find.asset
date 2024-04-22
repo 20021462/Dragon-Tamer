@@ -19,43 +19,14 @@ MonoBehaviour:
   tasks:
   - {fileID: 578013204898972048}
   transitions:
-  - decision: {fileID: 74681279061386795}
+  - decision: {fileID: 4147027418165940554}
     trueState: {fileID: 11400000, guid: 7b484cb7a2e7eef4491f85259b9d651f, type: 2}
     falseState: {fileID: 0}
   GizmoStateColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   CreateTaskAsset: 1
   CreateDecisionAsset: 1
   TasksIndex: -1
-  DecisionIndex: -1
---- !u!114 &74681279061386795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5116c9dfa508bc4dafb4988c76b0f1f, type: 3}
-  m_Name: D_CheckRuntimeSet
-  m_EditorClassIdentifier: 
-  active: 1
-  Description: Check if a Runtime Set is Empty or has a Size equal, greater or less
-    than a given value
-  DecisionID:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  send: 0
-  interval:
-    UseConstant: 1
-    ConstantValue: 0.2
-    Variable: {fileID: 0}
-  WaitForAllTasks: 0
-  waitForTask: -1
-  Set: {fileID: 11400000, guid: 2e905e3dae27d2f4ca5b63efef00e6b1, type: 2}
-  CheckSize: 0
-  Size: 0
+  DecisionIndex: 0
 --- !u!114 &578013204898972048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,3 +60,32 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 
     Variable: {fileID: 0}
+--- !u!114 &4147027418165940554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41127696499b3ad47918f9e35722f0d1, type: 3}
+  m_Name: D_CheckTarget
+  m_EditorClassIdentifier: 
+  active: 1
+  Description: Type Description Here
+  DecisionID:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  send: 0
+  interval:
+    UseConstant: 1
+    ConstantValue: 0.2
+    Variable: {fileID: 0}
+  WaitForAllTasks: 0
+  waitForTask: -1
+  compare: 0
+  set: {fileID: 0}
+  transform: {fileID: 0}
+  m_name: 

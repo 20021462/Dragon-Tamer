@@ -137,7 +137,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPrefabs:
-  - {fileID: 4360674606695539362, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
+  - {fileID: 7742300772622687758, guid: 8a5d29aee94ef564d9bee6fc20d9691d, type: 3}
+  - {fileID: 7742300772622687758, guid: e19773f32dc89d84dbe98f7e85ce8f00, type: 3}
+  - {fileID: 7742300772622687758, guid: f037b00d685e928458af159d6bb16a85, type: 3}
+  - {fileID: 7742300772622687758, guid: 83918f0bda49e2f46bb240fd10157a54, type: 3}
+  - {fileID: 7742300772622687758, guid: 231fe2996da462a4896a32087a97bb0d, type: 3}
+  - {fileID: 7742300772622687758, guid: 80e870468bf44604db2e708b3a91da4d, type: 3}
+  - {fileID: 7742300772622687758, guid: 0d154fe3f2af84142be457fc5f466e34, type: 3}
+  - {fileID: 7742300772622687758, guid: bce0774658dca3a4eab5afec1b2f1dce, type: 3}
+  - {fileID: 7742300772622687758, guid: e35e7722db62b9a41aecb5b4c701829c, type: 3}
   minVertsForSpawn: 30
   scaler: 0.5
   spawnLikelyHood: 62
