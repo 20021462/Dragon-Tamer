@@ -5,12 +5,12 @@ using UnityEngine;
 public class UIController : MonoBehaviour
 {
     [SerializeField] private GameObject chatPanel;
-    [SerializeField] private Transform sidePos;
-    [SerializeField] private Transform button;
+    [SerializeField] private GameObject button;
 
     public void ClickChat()
     {
+        Debug.Log("abc");
         chatPanel.SetActive(!chatPanel.activeSelf);
-        button.position = sidePos.position;
+        button.SetActive(!button.activeSelf);
     }
 }
