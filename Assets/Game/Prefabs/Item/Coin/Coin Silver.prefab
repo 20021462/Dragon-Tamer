@@ -60,6 +60,30 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -5216581434543980006, guid: ef9c7f972ecb02f46b00954b121a37f9, type: 3}
+    - target: {fileID: 114881377635398666, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
+      propertyPath: events.OnInteractWith.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881377635398666, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
+      propertyPath: events.OnInteractWith.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: c613a06a30a5c1b459ba68d245a2c25f, type: 2}
+    - target: {fileID: 114881377635398666, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
+      propertyPath: events.OnInteractWith.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Add
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881377635398666, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
+      propertyPath: events.OnInteractWith.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MalbersAnimations.Scriptables.IntVar, MalbersAnimations
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881377635398666, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
+      propertyPath: events.OnInteractWith.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881377635398666, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
+      propertyPath: events.OnInteractWith.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1807534730538678, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
       propertyPath: m_Name
-      value: Mana_5
+      value: Mana_1_5
       objectReference: {fileID: 0}
     - target: {fileID: 4432890301020822, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60,6 +60,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2440521538353798373, guid: aa37a5644b97d284db3cb368087d8d72, type: 3}
+    - target: {fileID: 114881377635398666, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
+      propertyPath: events.OnInteractWith.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 560c1a13b4d31c4418434a2caa36339d, type: 2}
+    - target: {fileID: 114881377635398666, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
+      propertyPath: events.OnInteractWith.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Add
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881377635398666, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
+      propertyPath: events.OnInteractWith.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MalbersAnimations.Scriptables.IntVar, MalbersAnimations
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881377635398666, guid: e83a7acf7979e95428edd34b695e1d17, type: 3}
+      propertyPath: events.OnInteractWith.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
