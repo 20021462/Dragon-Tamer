@@ -35,7 +35,7 @@ public class SpawnOnARMesh : MonoBehaviour
 
 
         int spawnLikely =  Random.Range(0, 100 / spawnLikelyHood);
-        Debug.Log("Spawnlikely => " + spawnLikely);
+        //Debug.Log("Spawnlikely => " + spawnLikely);
 
         if (spawnLikely != 0)
         {

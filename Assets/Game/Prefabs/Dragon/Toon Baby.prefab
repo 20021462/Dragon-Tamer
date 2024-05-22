@@ -664,6 +664,14 @@ PrefabInstance:
       propertyPath: onEnable.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4588233165917199547, guid: 19bf51258d8334141a83539bd60c36a1, type: 3}
+      propertyPath: m_Data.brainName
+      value: workspaces/dragon_tamer/characters/blaze
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588233165917199547, guid: 19bf51258d8334141a83539bd60c36a1, type: 3}
+      propertyPath: m_Data.givenName
+      value: Blaze
+      objectReference: {fileID: 0}
     - target: {fileID: 4961777292849509197, guid: 19bf51258d8334141a83539bd60c36a1, type: 3}
       propertyPath: Editor_Tabs1
       value: 0

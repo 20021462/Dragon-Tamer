@@ -1,9 +1,8 @@
 using MalbersAnimations.Scriptables;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using static Cinemachine.DocumentationSortingAttribute;
+using System.Collections.Generic;
 
 public class UIController : MonoBehaviour
 {
@@ -23,6 +22,11 @@ public class UIController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI goldText;
     [SerializeField] private Slider expSlider;
 
+    [SerializeField] private Button myRoomButton;
+    [SerializeField] private Button adventureButton;
+    [SerializeField] private ScrollRect scrollRect;
+
+
     private int nextExp;
 
     private void OnEnable()
@@ -41,12 +45,21 @@ public class UIController : MonoBehaviour
         goldVar.Variable.OnValueChanged -= OnGoldChanged;
     }
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     private void Start()
     {
-        OnNameChanged(nameVar.Value);
-        OnLevelChanged(levelVar.Value);
-        OnExpChanged(expVar.Value);
-        OnGoldChanged(goldVar.Value);
+        //OnNameChanged(nameVar.Value);
+        //OnLevelChanged(levelVar.Value);
+        //OnExpChanged(expVar.Value);
+        //OnGoldChanged(goldVar.Value);
+        nameVar.Value = PlayerPrefs.GetString("name", "Blaze");
+        levelVar.Value = PlayerPrefs.GetInt("level", 1);
+        expVar.Value = PlayerPrefs.GetInt("exp", 0);
+        goldVar.Value = PlayerPrefs.GetInt("gold", 0);
     }
 
     public void ClickChat()
@@ -56,18 +69,24 @@ public class UIController : MonoBehaviour
 
     private void OnNameChanged(string name)
     {
+        PlayerPrefs.SetString("name", name);
+
         nameText.text = name;
         nameChatText.text = name;
     }
 
     private void OnLevelChanged(int level)
     {
+        PlayerPrefs.SetInt("level", level);
+
         levelText.text = level.ToString();
         nextExp = 480 + (int)(20 * Mathf.Pow(2, level - 1));
     }
 
     private void OnExpChanged(int exp)
     {
+        PlayerPrefs.SetInt("exp", exp);
+
         string text = AbbreviationUtility.AbbreviateNumber(exp);
         text += "/" + AbbreviationUtility.AbbreviateNumber(nextExp);
         expText.text = text;
@@ -80,20 +99,25 @@ public class UIController : MonoBehaviour
             levelVar.Value++;
             expVar.Value = exp - nextExp;
         }
+
+        GameManager.Instance.SendTrigger("item_collected");
     }
 
     public void OnGoldChanged(int gold)
     {
+        PlayerPrefs.SetInt("gold", gold);
+
         goldText.text = AbbreviationUtility.AbbreviateNumber(gold);
     }
 
-    public void LoadGameplayScene()
+    public void ChangeButton(bool myRoomMode)
     {
-        SceneManager.LoadSceneAsync("Playground", LoadSceneMode.Single);
+        myRoomButton.gameObject.SetActive(!myRoomMode);
+        adventureButton.gameObject.SetActive(myRoomMode);
     }
 
-    public void LoadMainScene()
+    public void ScrollToBottom()
     {
-        SceneManager.LoadSceneAsync("MyRoom", LoadSceneMode.Single);
+        scrollRect.verticalNormalizedPosition = 0;
     }
 }

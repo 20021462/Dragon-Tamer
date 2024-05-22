@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Game/Scenes/StartScene.unity
+    guid: f9769ba6f3266fa4fbfd9674c7f14e92
+  - enabled: 1
     path: Assets/Game/Scenes/MyRoom.unity
     guid: 311656b3eda77244792a88d233a455a5
   - enabled: 1
-    path: Assets/Game/Scenes/Playground.unity
+    path: Assets/Game/Scenes/Adventure.unity
     guid: bc00a904f3a2af2499953999b0752e0f
   m_configObjects:
     Niantic.Lightship.AR.LightshipSettings: {fileID: 11400000, guid: 6c6dbb081d09aca4d8f83744fec57327, type: 2}

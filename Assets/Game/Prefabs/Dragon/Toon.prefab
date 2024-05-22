@@ -988,8 +988,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Data:
     agentId: 
-    brainName: workspaces/dragon_tamer/characters/the_red_dragon
-    givenName: The Red Dragon
+    brainName: workspaces/dragon_tamer/characters/blaze
+    givenName: Blaze
     characterAssets:
       rpmModelUri: 
       rpmImageUriPortrait: 

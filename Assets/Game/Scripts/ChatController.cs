@@ -9,6 +9,7 @@ public class ChatController : MonoBehaviour
     [SerializeField] TMP_InputField m_InputField;
     public void SendText()
     {
+        Debug.Log("send");
         if (!m_InputField || string.IsNullOrEmpty(m_InputField.text) || !InworldController.CurrentCharacter)
             return;
         try
@@ -16,6 +17,7 @@ public class ChatController : MonoBehaviour
             if (InworldController.CurrentCharacter)
                 InworldController.CurrentCharacter.SendText(m_InputField.text);
             m_InputField.text = "";
+            GetComponent<UIController>().ScrollToBottom();
         }
         catch (InworldException e)
         {
